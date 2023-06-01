@@ -50,9 +50,10 @@ const SignUp = () => {
   const isSubmitButtonDisabled = name.trim() === '' || email.trim() === '' || password.trim() === '' || error !== null;
 
   return (
-    <div className="SignUp-container" style={{ backgroundImage: `url("img/img6.png")` }}>
+    <div className="SignUp-container" >
       <h1 className='h'> Create Your Account</h1>
       <form onSubmit={handleSubmit} className="SignUp-form">
+      <img src='img/p3.png' className='logo'/>
         <div className="form-group">
           <label className="Name">Name:</label>
           <input type="text" value={name} onChange={handleNameChange} />
@@ -63,14 +64,12 @@ const SignUp = () => {
           <label className="labelP">Password:</label>
           <input type="password" value={password} onChange={handlePasswordChange} />
         </div>
-        <button type="submit" >
+        <button type="submit" className='submit'>
           SignUp
         </button>
         <br />
         {/* <button className="google-signUp">SignUp With Google</button> */}
-        <a href="https://www.google.com" className="google" >
-          Login With Google
-        </a>
+      
         {error && <p className="error">{error}</p>}
         <h5>Already have an account? <Link to="/login">Login</Link></h5>
       </form>

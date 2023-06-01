@@ -44,10 +44,14 @@ const emailRegex = /^[\w-.]+@(gmail|hotmail|yahoo)\.(com|net|org)$/i;
   const isSubmitButtonDisabled = email.trim() === '' || password.trim() === '' || error !== null;
 
   return (
-    <div className="login-container" style={{ backgroundImage: `url("img/img6.png")` }}>
+    //style={{ backgroundImage: `url("img/img6.png")` }}
+    <div className="login-container" >
+      {/* <h1 className='MP'>MP</h1> */}
       <h1 className="h">Login into your account</h1>
       <form onSubmit={handleSubmit} className="login-form">
+      <img src='img/p3.png' className='logo'/>
         <div className="form-group">
+        
           <label className="labelE">Email:</label>
           <input type="email" value={email} onChange={handleEmailChange} placeholder="example@gmail.com" />
         </div>
@@ -60,10 +64,8 @@ const emailRegex = /^[\w-.]+@(gmail|hotmail|yahoo)\.(com|net|org)$/i;
           Login
         </button>
         <br></br>
-        {/* <button className="google"  disabled={isSubmitButtonDisabled}>Login With Google</button> */}
-        <a href="https://www.google.com" className="google" >
-          Login With Google
-        </a>
+      
+       
         <h5>  Don't have an account? <Link to="/SignUp">Sign up</Link></h5>
       </form>
     </div>

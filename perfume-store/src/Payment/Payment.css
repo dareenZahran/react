@@ -1,0 +1,44 @@
+.payment-container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+  }
+  
+  .payment-container h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  .payment-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .payment-container label {
+    margin-bottom: 5px;
+  }
+  
+  .payment-container input {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .payment-container .error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .payment-container button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .payment-container button:hover {
+    background-color: #0056b3;
+  }
+  

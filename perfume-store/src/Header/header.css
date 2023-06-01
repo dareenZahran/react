@@ -1,19 +1,12 @@
-:root {
-    --primary-color: #d9d2d2;
-    --secondary-color: #1e1414;
-    --font-size-header: 2.5rem;
-    --font-size-subheader: 1.2rem;
-  }
-  
+
   
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--primary-color);
-    color: rgb(62, 25, 25);
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    /* background-color: #846b91; */
+    background: linear-gradient(to right, #846b91, #846b91);
+    padding: 10px;
   }
   
   
@@ -23,6 +16,7 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-style: italic;
 color: rgb(0, 0, 0);
+margin-left: 20px;
   }
   
   .logo:hover {
@@ -44,6 +38,7 @@ color: rgb(0, 0, 0);
     color: white;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
+    
   }
   
   a:hover {
@@ -54,3 +49,37 @@ color: rgb(0, 0, 0);
     padding-bottom: 5px;
    
  }
+ img{
+width:15%;
+ }
+ .cart{
+ width:30px;
+ height:30px;
+ margin-left: 20px;
+ margin-right: 20px;
+ }
+ .cart:hover{
+  width:32px;
+  height:32px;
+ }
+ 
+.AboutUs{
+padding-left: 30px;
+justify-content: center;
+justify-items: center;
+
+}
+button.AboutUs {
+  background-color:#e9e7e7;
+  color:#5a428b;
+  border: none;
+  padding: 1px 22px;
+  font-size: 12px;
+  border-radius: 20px;
+
+}
+
+.AboutUs:hover {
+  background-color:#391642;
+  color: white;
+}

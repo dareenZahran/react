@@ -1,20 +1,24 @@
 import React from 'react';
 import './header.css';
 import { Link } from 'react-router-dom';
+import Category from '../Categore/category';
 
 function Header() {
   return (
     <header>
       <Link to="/header">
-        <h1 className='logo'>MY PERFUM</h1>
-        
+        <img src='img/p3.png' alt="Logo" />
+      </Link>
+      <Category/>
+
+      <Link to="/AboutUs"> 
+        <button className='AboutUs'>About-Us</button>
+      </Link>
+
+      <div>
+        <Link to="/cart">
+          <img src='img/cart.png' className="cart"/>
         </Link>
-       
-        <div className="search-container">
-        <input type="text" placeholder="Search" />
-      </div>
-      <div className="profile-container">
-        <div className="profile-circle"></div>
       </div>
     </header>
   );

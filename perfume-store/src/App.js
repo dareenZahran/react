@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import ImageSequence from './ImageSequence/ImageSequence';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -9,6 +9,12 @@ import Details from './HomeDetails/details';
 import Home from './Home/home';
 import Category from './Categore/category';
 import SignUp from './SignUp/SignUp';
+import Welcom from './Welcom/welcom';
+import Cart from './cart/Cart';
+import AboutUs from './AboutUs/AboutUs';
+import Women from './Women/Women';
+import Men from './Men/Men';
+import Payment from './Payment/Payment';
 function App() {
   return (
   <BrowserRouter>
@@ -31,6 +37,14 @@ element={
   </div>
 }
 />
+<Route 
+path='/welcom'
+element={
+  <div>
+    <Welcom/>
+  </div>
+}
+/>
 
 
 <Route 
@@ -39,8 +53,27 @@ element={
   <div>
    
     <Header/>
-    <Category/>
     <Home/>
+  </div>
+}
+/>
+<Route 
+path='/Cart'
+element={
+  <div>
+     <Header/>
+   <Cart/>
+  
+  </div>
+}
+/>
+<Route 
+path='/Payment'
+element={
+  <div>
+     <Header/>
+   <Payment/>
+  
   </div>
 }
 />
@@ -50,12 +83,12 @@ path='/card'
 element={
   <div>
     <Header/>
-    <Category/>
+    {/* <Category/> */}
     <Card/>
   </div>
 }
 />
-<Route 
+{/* <Route 
 path='/details'
 element={
   <div>
@@ -64,13 +97,13 @@ element={
     <Details/>
   </div>
 }
-/>
+/> */}
 <Route 
 path='/home'
 element={
   <div>
     <Header/>
-    <Category/>
+    {/* <Category/> */}
     <Home/>
   </div>
 }
@@ -80,11 +113,39 @@ path='/category'
 element={
   <div>
     <Header/>
-    <Category/>
+    {/* <Category/> */}
     <Home/>
   </div>
 }
 />
+<Route 
+path='/Women'
+element={
+  <div>
+    <Header/>
+    <Women/>
+  </div>
+}
+/>
+<Route 
+path='/Men'
+element={
+  <div>
+    <Header/>
+    <Men/>
+  </div>
+}
+/>
+<Route 
+path='/AboutUs'
+element={
+  <div>
+    <Header/>
+    <AboutUs/>
+  </div>
+}
+/>
+
 
 <Route 
 path='/SignUp'
@@ -94,6 +155,16 @@ element={
   </div>
 }
 />
+<Route
+      path="/product/:id"
+      element={
+        <div>
+          <Header/>
+    {/* <Category/> */}
+    <Details/>
+        </div>
+      }
+    />
 
   </Routes>
   </BrowserRouter>

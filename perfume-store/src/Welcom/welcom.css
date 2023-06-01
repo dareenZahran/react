@@ -1,0 +1,44 @@
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+ 
+  }
+  .page2{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+ margin-bottom: 200px;
+
+  }
+  .button{
+    margin-top: 10px;
+    width: 300px;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    background: linear-gradient(to right, #4c2f65, #cf83cf);
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 30px;
+    /* transition: transform 0.3s ease; */
+  }
+  .button:hover{
+    transform: translateX(10px);
+  }
+ .img{
+width: auto;
+/* margin-bottom: 100px; */
+padding: 0px;
+ }

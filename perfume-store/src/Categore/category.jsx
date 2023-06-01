@@ -1,11 +1,16 @@
 import React from 'react';
 import './category.css'; // Import the CSS file
+import { Link } from 'react-router-dom';
+
 const Category = () => {
   return (
-    // JSX code for your component
     <div className='category'>
-      <h1>WOMEN</h1>
-      <h1>Men</h1>
+      <Link to="/Women">
+        <h1 className='women'>WOMEN</h1>
+      </Link>
+      <Link to="/Men">
+        <h1 className='women'>Men</h1>
+      </Link>
     </div>
   );
 };

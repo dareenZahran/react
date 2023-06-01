@@ -5,19 +5,13 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-  
+  /* background-color: #796087; */
+  background: linear-gradient(to right, #796087, #c1adc1);
   background-size: cover;
   background-position: center;
   }
   
-  .login-form {
-    width: 300px;
-    padding: 40px 30px;
-    background-color: #fff;
-    border-radius: 4px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  }
-  
+
   .login-title {
     font-family: 'Grand Hotel', cursive;
     font-size: 32px;
@@ -26,42 +20,8 @@
     margin-bottom: 30px;
   }
   
-  /* .login-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 3px solid #dbdbdb;
-    border-radius: 4px;
-    font-size: 14px;
-  }
-  
-  .login-input:focus {
-    outline: none;
-    border-color: #3897f0;
-    box-shadow: 0 0 0 1px #3897f0;
-  } */
-/*   
-  .login-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #3897f0;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    /* transition: background-color 0.3s; */
-    /* border-radius: 30px; */
-   */
-  
-  /* .login-button:hover {
-    background-color: #1877c5;
-  } */
- .login-error {
-    color: #ed4956;
-    text-align: center;
-    margin-top: 10px;
-  } 
+ 
+
   .login-footer {
     margin-top: 20px;
     text-align: center;
@@ -79,17 +39,22 @@
   }
   
   .login-form {
-    background-color: #ffffff1c;
+    background-color: #846b91;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border: 3px solid #f7f7f700;
-    padding: 60px;
+    padding: 120px;
     margin: 0 auto;
-    max-width: 300px;
+    max-width: 600px;
+    width: 300px;
 border-radius: 20px;
+padding-top: 30px;
+padding-bottom: 70px;
   }
+ 
+  
   
   .form-group {
     margin-bottom: 10px;
@@ -97,15 +62,21 @@ border-radius: 20px;
   
   .submit{
     margin-top: 10px;
+    margin-right: 27px;
     width: 100%;
-    padding: 10px;
-    background-color: #bf7575;
+    /* padding: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #4c2f65, #cf83cf);
     color: #090909;
     border: none;
-    border-radius: 4px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  
+    font-size: 20px;
+    /* cursor: pointer; */
+  
     border-radius: 30px;
   }
  
@@ -115,6 +86,7 @@ color: #ffffff;
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-style: italic;
 padding-right: 10px;
+font-size: 18px;
 
   }
   .labelP{
@@ -123,6 +95,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-style: italic;
 padding-right: 20px;
 padding-left: -100px;
+font-size: 18px;
   }
 
   
@@ -133,11 +106,18 @@ padding-left: -100px;
   background: #c8c3c3;
   border-color: #fff;
   }
+ 
  .error{
-  color: #db4141;
+  color: #920000;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-style: italic;
+ text-align: center;
+  margin-top: 10px;
+  margin-right: 27px; 
  }
+ 
+
+
  .h{
 
   color: #ffffff;
@@ -149,26 +129,12 @@ font-size: 20px;
   color: #ffffff;
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-style: italic;
+font-size:15px;
+
 
  }
- .google{
-
-  width: 100%;
-  padding: 10px;
-  background-color: #222324;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
- }
- .google:hover{
-
-
-  color: #bf7575;
+  .logo{
+ justify-content: center;
+  width: 120px;
  
  }
