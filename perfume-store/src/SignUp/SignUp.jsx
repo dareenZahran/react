@@ -51,7 +51,7 @@ const SignUp = () => {
 
   return (
     <div className="SignUp-container" >
-      <h1 className='h'> Create Your Account</h1>
+    
       <form onSubmit={handleSubmit} className="SignUp-form">
       <img src='img/p3.png' className='logo'/>
         <div className="form-group">
