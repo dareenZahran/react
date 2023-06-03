@@ -65,8 +65,8 @@
 
 }
 a:-webkit-any-link {
-  color:  azure;
+  color:  rgb(0, 15, 15);
   cursor: pointer;
   text-decoration: underline;
-} 
+}
 
