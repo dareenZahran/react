@@ -29,7 +29,7 @@ const Home = () => {
     <div className='home'>
     {products.map(product => (
       <Card key={product.id} product={product} />
-      // if
+    
     ))}
   </div>
   );
