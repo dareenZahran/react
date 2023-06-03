@@ -1,23 +1,46 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { CartContext } from '../CartContext/CartContext';
 import './Payment.css';
 
 const Payment = () => {
-  const [paymentDate, setPaymentDate] = useState('');
+  const { cartItems } = useContext(CartContext);
+  const [paymentDate, setPaymentDate] = useState(getCurrentDate());
   const [paymentMethod, setPaymentMethod] = useState('');
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState(getTotalPayment());
   const [error, setError] = useState('');
+
+  function getCurrentDate() {
+    const today = new Date();
+    const year = today.getFullYear();
+    let month = today.getMonth() + 1;
+    let day = today.getDate();
+
+    if (month < 10) {
+      month = `0${month}`;
+    }
+
+    if (day < 10) {
+      day = `0${day}`;
+    }
+
+    return `${year}-${month}-${day}`;
+  }
+
+  function getTotalPayment() {
+    return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+  }
 
   const handlePayment = async (e) => {
     e.preventDefault();
 
     const paymentData = {
-      paymentDate,
-      paymentMethod,
-      amount
+      "paymentDate":paymentDate ,
+      "paymentMethod":paymentMethod,
+      "amount":amount
     };
 
     try {
-      const response = await fetch('/api/payment', {
+      const response = await fetch('http://localhost:8080/Payment', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -28,9 +51,9 @@ const Payment = () => {
       if (response.ok) {
         // Payment successful
         // Reset form fields
-        setPaymentDate('');
+        setPaymentDate(getCurrentDate());
         setPaymentMethod('');
-        setAmount(0);
+        setAmount(getTotalPayment());
         setError('');
       } else {
         // Handle error response
@@ -44,12 +67,10 @@ const Payment = () => {
   };
 
   return (
-    <div>
-
+    <div className="payment-container">
       <h2>Payment</h2>
       <form onSubmit={handlePayment}>
         <div>
-            
           <label htmlFor="paymentDate">Payment Date</label>
           <input
             type="date"
@@ -61,23 +82,28 @@ const Payment = () => {
         </div>
         <div>
           <label htmlFor="paymentMethod">Payment Method</label>
-          <input
-            type="text"
+          <select
             id="paymentMethod"
             value={paymentMethod}
             onChange={(e) => setPaymentMethod(e.target.value)}
             required
-          />
+          >
+            <option value="">Select Payment Method</option>
+            <option value="Credit Card">Credit Card</option>
+            <option value="PayPal">PayPal</option>
+            <option value="Bank Transfer">Bank Transfer</option>
+          </select>
         </div>
         <div>
           <label htmlFor="amount">Amount</label>
           <input
-            type="number"
-            id="amount"
-            value={amount}
-            onChange={(e) => setAmount(parseFloat(e.target.value))}
-            required
-          />
+  type="number"
+  id="amount"
+  value={amount}
+  readOnly
+  required
+/>
+
         </div>
         {error && <p className="error">{error}</p>}
         <button type="submit">Make Payment</button>

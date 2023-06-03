@@ -14,7 +14,11 @@ const Cart = () => {
     decreaseQuantity(itemId);
   };
 
-  const totalPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+  // const totalPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+  const totalPrice = parseFloat(cartItems.reduce((total, item) => total + item.price * item.quantity, 0));
+
+
+
 
   return (
     <div className="cart-container">
