@@ -47,7 +47,7 @@ const emailRegex = /^[\w-.]+@(gmail|hotmail|yahoo)\.(com|net|org)$/i;
     //style={{ backgroundImage: `url("img/img6.png")` }}
     <div className="login-container" >
       {/* <h1 className='MP'>MP</h1> */}
-      <h1 className="h">Login into your account</h1>
+      
       <form onSubmit={handleSubmit} className="login-form">
       <img src='img/p3.png' className='logo'/>
         <div className="form-group">
