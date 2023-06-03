@@ -20,6 +20,12 @@ function Header() {
           <img src='img/cart.png' className="cart"/>
         </Link>
       </div>
+
+      <div>
+        <Link to="/Add">
+        <button className='AddProduct'>Add</button>
+        </Link>
+      </div>
     </header>
   );
 }

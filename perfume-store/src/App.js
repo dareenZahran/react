@@ -15,6 +15,7 @@ import AboutUs from './AboutUs/AboutUs';
 import Women from './Women/Women';
 import Men from './Men/Men';
 import Payment from './Payment/Payment';
+import AddProduct from './addProduct/addProduct'; 
 function App() {
   return (
   <BrowserRouter>
@@ -145,7 +146,14 @@ element={
   </div>
 }
 />
-
+<Route 
+path='/Add'
+element={
+  <div>
+   <AddProduct/>
+  </div>
+}
+/>
 
 <Route 
 path='/SignUp'
