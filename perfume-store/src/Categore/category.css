@@ -5,28 +5,42 @@
   width: 300px;
   display: flex;
   justify-content: center;
-  margin-left: 0px;
+  margin-left: 0;
   margin-right: 28%;
-  padding-right:30px;
+  padding-right: 30px;
 }
 
-  /* h1{
-   font-size: small;
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-style: italic;
-  } */
-  .women{
-    font-size: 16px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- font-style: italic;
- margin-left: 30px;
- color: aliceblue;
-  }
-  .men{
-    font-size: small;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- font-style: italic;
+.women {
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  margin-left: 30px;
+  color: aliceblue;
+}
 
- color: aliceblue;
+.men {
+  font-size: small;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  color: aliceblue;
+}
+
+/* Media Query for small screens */
+@media (max-width: 768px) {
+  .category {
+    width: 100%;
+    margin: 10px auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-right: 0;
   }
-  
+
+  .women {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .men {
+    font-size: 12px;
+  }
+}

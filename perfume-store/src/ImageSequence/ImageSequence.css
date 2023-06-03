@@ -61,17 +61,10 @@
   background-color: #826a9b65;
   color: #6e4c73;
 }
-
-a:-webkit-any-link {
-<<<<<<< HEAD
-  color: azure;
-  cursor: pointer;
-  text-decoration: underline;
+@media (max-width: 768px) {
+  .home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
 }
-=======
-  color:  rgb(0, 15, 15);
-  cursor: pointer;
-  text-decoration: underline;
-}
-
->>>>>>> e1645db7dbff5e619a2c0b830ca9cc9267811db7

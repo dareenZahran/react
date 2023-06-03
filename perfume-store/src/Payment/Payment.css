@@ -11,6 +11,14 @@
     text-align: center;
   }
   
+  @media (max-width: 768px) {
+    .home {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+  
   .payment-container form {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+    .home {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+  .payment-success {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .payment-success h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .payment-success p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
