@@ -45,7 +45,7 @@ const AddProduct = () => {
 
   return (
     <div>
-      <h2>Add Product</h2>
+    
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name</label>

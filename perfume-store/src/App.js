@@ -147,9 +147,11 @@ element={
 }
 />
 <Route 
+
 path='/Add'
 element={
   <div>
+      <Header/>
    <AddProduct/>
   </div>
 }
