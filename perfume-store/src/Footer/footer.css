@@ -33,11 +33,12 @@
  img{
 width:15%;
  }
- .cart{
- width:30px;
- height:30px;
+ .profile{
+ width:35px;
+ height:35px;
  margin-left: 20px;
  margin-right: 20px;
+ padding-right: 30px;
  }
  
  

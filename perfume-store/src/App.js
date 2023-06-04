@@ -18,6 +18,7 @@ import Men from './Men/Men';
 import Payment from './Payment/Payment';
 import AddProduct from './addProduct/addProduct'; 
 import SuccessPayment from './Success/SuccessPayment'
+import Profile from './Profile/profile';
 function App() {
   return (
   <BrowserRouter>
@@ -156,7 +157,19 @@ path='/Add'
 element={
   <div>
       <Header/>
+    <Footer/>
+
    <AddProduct/>
+  </div>
+}
+/>
+<Route 
+
+path='/profile'
+element={
+  <div>
+      <Header/>
+   <Profile/>
   </div>
 }
 />
