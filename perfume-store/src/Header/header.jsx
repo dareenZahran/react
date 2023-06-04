@@ -7,34 +7,35 @@ function Header() {
   return (
     <header>
       <Link to="/header">
-        <img src='img/p3.png' alt="Logo" />
+        <img src='/img/p3.png' alt="Logo" />
       </Link>
       <Category/>
 
+      <div>
+        <Link to="/AboutUs">
+          <button className="submit2">
+            <img src="img/icons8-about-50.png" alt="About Us" /> 
+          </button>
+        </Link>
+      </div>
       
       <div>
-      <Link to="/AboutUs">
-        <button className="AboutUs">About-Us</button>
-      </Link>
-      </div>
-      <div>
         <Link to="/cart">
-          <img src='img/cart.png' className="cart"/>
+          <img src='/img/cart.png' alt="Cart" className="cart" />
         </Link>
       </div>
 
       <div>
         <Link to="/Add">
-        <img src='img/add1.png' className="add"/>
-        
+          <img src='/img/add1.png' alt="Add" className="add" />
         </Link>
       </div>
+      
       <div>
-      <Link to="/profile">
-          <img src='img/profile.png' className="profile"/>
-        </Link></div>
-
-        
+        <Link to="/profile">
+          <img src='/img/profile.png' alt="Profile" className="profile" />
+        </Link>
+      </div>
     </header>
   );
 }

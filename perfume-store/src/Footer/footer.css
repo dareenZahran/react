@@ -11,6 +11,7 @@ footer {
   height: 5px; /* Adjust the height to your desired size */
   padding: 20px;
   text-align: center;
+  size: 20px;
 }
 
   
@@ -42,23 +43,26 @@ width:15%;
  padding-right: 30px; */
  }
  
- 
-.AboutUs{
-padding-left: 30px;
-justify-content: center;
-justify-items: center;
-background-color:#e9e7e7;
-  color:#5a428b;
-  
+/*  
+ .AboutUs {
+  size: 20px;
+  padding-left: 30px;
+  justify-content: center;
+  justify-items: center;
   border: none;
   padding: 1px 22px;
   font-size: 12px;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #e9e7e7;
+  color: #5a428b;
 }
-
 
 .AboutUs:hover {
-  background-color:#391642;
+  background-color: #391642;
   color: white;
-  
 }
+
+.AboutUs i {
+  margin-right: 5px; /* Adjust the spacing between the icon and the text }*/
