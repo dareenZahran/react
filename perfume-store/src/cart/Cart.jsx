@@ -39,7 +39,7 @@ const Cart = () => {
           {cartItems.map((item) => (
             <li key={item.id} className="item">
               <img src={item.photo} alt={item.name} className="image" />
-              <div>
+              <div className='attribute'>
                 <p>{item.name}</p>
                 <p>Price: ${item.price}</p>
                 <div>
@@ -57,7 +57,7 @@ const Cart = () => {
 
       <div>
         <Link to="/Payment">
-          <h3 className="total">Pay it now</h3>
+          <h3 className="total1">Pay it now</h3>
         </Link>
       </div>
     </div>

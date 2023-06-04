@@ -39,9 +39,7 @@ border-radius: 20px;
   }
  
 
-.SignUp-button:hover {
-  background-color: #1877c5;
-}
+
 
 
 .SignUp-footer {
@@ -53,7 +51,7 @@ border-radius: 20px;
 
 .SignUp-footer a {
   color: #00376b;
-  text-decoration: none;
+  text-decoration: none; 
 }
 
 .SignUp-footer a:hover {

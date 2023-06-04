@@ -51,8 +51,9 @@
     text-decoration: none;
     color: #333;
     transition: all 0.3s ease;
-    margin: 10px;
-    width: 250px;
+    margin: 50px;
+    width: 220px;
+    height:auto;
   }
   
   .product-card:hover {

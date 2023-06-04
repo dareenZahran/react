@@ -34,9 +34,7 @@ margin-bottom: 200px;
   border-radius: 30px;
   /* transition: transform 0.3s ease; */
 }
-.button:hover{
-  transform: translateX(10px);
-}
+
 .img{
 width: auto;
 /* margin-bottom: 100px; */
