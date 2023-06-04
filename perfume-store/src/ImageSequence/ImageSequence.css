@@ -65,7 +65,7 @@
 
 }
 a:-webkit-any-link {
-  color:  rgb(0, 15, 15);
+  color:  rgb(251, 255, 255);
   cursor: pointer;
   text-decoration: underline;
 }

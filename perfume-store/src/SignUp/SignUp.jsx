@@ -64,13 +64,13 @@ const SignUp = () => {
           <label className="labelP">Password:</label>
           <input type="password" value={password} onChange={handlePasswordChange} />
         </div>
-        <button type="submit" className='submit'>
+        <button type="submit" className='submit1'>
           SignUp
         </button>
         <br />
         {/* <button className="google-signUp">SignUp With Google</button> */}
       
-        {error && <p className="error">{error}</p>}
+        {error && <p className="error1">{error}</p>}
         <h5>Already have an account? <Link to="/login">Login</Link></h5>
       </form>
     </div>

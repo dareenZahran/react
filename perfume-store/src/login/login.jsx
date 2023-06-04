@@ -58,9 +58,9 @@ const emailRegex = /^[\w-.]+@(gmail|hotmail|yahoo)\.(com|net|org)$/i;
         <div className="form-group">
           <label className="labelP">Password:</label>
           <input type="password" value={password} onChange={handlePasswordChange} />
-          {error && <p className="error">{error}</p>}
+          {error && <p className="error2">{error}</p>}
         </div>
-        <button type="submit" className="submit">
+        <button type="submit" className="submit1">
           Login
         </button>
         <br></br>
