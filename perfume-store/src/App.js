@@ -17,6 +17,7 @@ import Women from './Women/Women';
 import Men from './Men/Men';
 import Payment from './Payment/Payment';
 import AddProduct from './addProduct/addProduct'; 
+import SuccessPayment from './Success/SuccessPayment'
 function App() {
   return (
   <BrowserRouter>
@@ -150,10 +151,11 @@ element={
 }
 />
 <Route 
+
 path='/Add'
 element={
   <div>
-    <Footer/>
+      <Header/>
    <AddProduct/>
   </div>
 }
@@ -177,6 +179,17 @@ element={
         </div>
       }
     />
+<Route 
+path='/success'
+element={
+  <div>
+     <Header/>
+     {/* <Category/> */}
+  <SuccessPayment/>
+  </div>
+}
+/>
+
 
   </Routes>
   

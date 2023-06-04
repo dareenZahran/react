@@ -1,3 +1,4 @@
+
 import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -37,18 +38,18 @@ const Payment = () => {
     e.preventDefault();
 
     const paymentData = {
-      paymentDate,
-      paymentMethod,
-      amount
-    };
+      "paymentDate": paymentDate,
+      "paymentMethod": paymentMethod,
+      "amount": amount
+    }  
 
     try {
       const response = await fetch('http://localhost:8080/Payment', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
         },
-        body: JSON.stringify(paymentData)
+        body: JSON.stringify(paymentData),
       });
 
       if (response.ok) {
