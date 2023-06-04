@@ -1,4 +1,3 @@
-
 import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -7,7 +6,7 @@ import './Payment.css';
 
 const Payment = () => {
   const navigate = useNavigate();
-  const { cartItems } = useContext(CartContext);
+  const { cartItems, totalPrice } = useContext(CartContext);
   const [paymentDate, setPaymentDate] = useState(getCurrentDate());
   const [paymentMethod, setPaymentMethod] = useState('');
   const [amount, setAmount] = useState(getTotalPayment());
@@ -31,17 +30,18 @@ const Payment = () => {
   }
 
   function getTotalPayment() {
-    return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+    const formattedTotalPrice = parseFloat(totalPrice).toFixed(2);
+    return formattedTotalPrice;
   }
 
   const handlePayment = async (e) => {
     e.preventDefault();
 
     const paymentData = {
-      "paymentDate": paymentDate,
-      "paymentMethod": paymentMethod,
-      "amount": amount
-    }  
+      paymentDate,
+      paymentMethod,
+      amount,
+    };
 
     try {
       const response = await fetch('http://localhost:8080/Payment', {
