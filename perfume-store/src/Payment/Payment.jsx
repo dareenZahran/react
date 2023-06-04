@@ -1,8 +1,11 @@
 import React, { useState, useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import { CartContext } from '../CartContext/CartContext';
 import './Payment.css';
 
 const Payment = () => {
+  const navigate = useNavigate();
   const { cartItems } = useContext(CartContext);
   const [paymentDate, setPaymentDate] = useState(getCurrentDate());
   const [paymentMethod, setPaymentMethod] = useState('');
@@ -34,9 +37,9 @@ const Payment = () => {
     e.preventDefault();
 
     const paymentData = {
-      "paymentDate":paymentDate ,
-      "paymentMethod":paymentMethod,
-      "amount":amount
+      paymentDate,
+      paymentMethod,
+      amount
     };
 
     try {
@@ -55,6 +58,9 @@ const Payment = () => {
         setPaymentMethod('');
         setAmount(getTotalPayment());
         setError('');
+
+        // Navigate to success page
+        navigate('/success');
       } else {
         // Handle error response
         const data = await response.json();
@@ -97,13 +103,12 @@ const Payment = () => {
         <div>
           <label htmlFor="amount">Amount</label>
           <input
-  type="number"
-  id="amount"
-  value={amount}
-  readOnly
-  required
-/>
-
+            type="number"
+            id="amount"
+            value={amount}
+            readOnly
+            required
+          />
         </div>
         {error && <p className="error">{error}</p>}
         <button type="submit">Make Payment</button>
