@@ -44,7 +44,7 @@ const Details = () => {
   //   </div>
   // );
   return (
-    <div className="container">
+    <div className="container1">
       {/* <h1 className='productDetails'>Product Details</h1> */}
   
       <div className="product-image">
