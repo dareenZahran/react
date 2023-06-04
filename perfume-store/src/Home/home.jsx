@@ -1,5 +1,8 @@
 import React from 'react';
 import Card from '../PerfumeCard/card';
+import Category from '../Categore/category';
+import Women from '../Women/Women';
+import Men from '../Men/Men';
 // import axios from 'axios';
 import { useState,useEffect } from 'react';
 const Home = () => {

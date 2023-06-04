@@ -25,7 +25,25 @@
     border-radius: 5px;
     font-size: 16px;
   }
+  .submit{
+    margin-top: 10px;
+    margin-right: 27px;
+    width: 100%;
+    /* padding: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #4c2f65, #cf83cf);
+    color: #090909;
+    border: none;
   
+    font-size: 20px;
+    /* cursor: pointer; */
+  
+    border-radius: 30px;
+  }
   .AddProduct button {
     padding: 10px 20px;
     background-color: #007bff;

@@ -27,7 +27,7 @@
     background: linear-gradient(to right, #4c2f65, #cf83cf);
     color: #ffffff;
     font-weight: bold;
-    border: none;
+    border:  none;
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s;

@@ -1,35 +1,36 @@
-
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   
-  header {
-    display: flex;
+  padding: 20px;
+  text-align: center;
+}
+  footer {
+    display:flex;
     justify-content: space-between;
     align-items: center;
     /* background-color: #846b91; */
     background: linear-gradient(to right, #846b91, #846b91);
-    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
   }
   
-  
-  .logo {
-    font-size: 20px;
-    margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-style: italic;
-color: rgb(0, 0, 0);
-margin-left: 20px;
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
   }
-  
-  
-  
-  .subheader {
-    font-size: var(--font-size-subheader);
-    margin: 0;
-    font-weight: bold;
-  }
-  
-  .subheader span {
-    display: block;
-  }
+ 
   
   
   a {
@@ -39,7 +40,9 @@ margin-left: 20px;
     
   }
   
-  
+  a:hover {
+    color: var(--secondary-color);
+  }
  input{
     padding-top: 5px;
     padding-bottom: 5px;
@@ -51,17 +54,13 @@ width:15%;
  .cart{
  width:30px;
  height:30px;
- margin-left: 5px;
- margin-right: 5px;
+ margin-left: 20px;
+ margin-right: 20px;
  }
- 
- .add{
-  width:35px;
-  height:35px;
-  margin-left: 5px;
-  margin-right: 15px;
-  }
-  
+ .cart:hover{
+  width:32px;
+  height:32px;
+ }
  
 .AboutUs{
 padding-left: 30px;

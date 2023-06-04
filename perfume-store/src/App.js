@@ -4,6 +4,7 @@ import ImageSequence from './ImageSequence/ImageSequence';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from './login/login';
 import Header from './Header/header';
+import Footer from './Footer/footer';
 import Card from './PerfumeCard/card';
 import Details from './HomeDetails/details';
 import Home from './Home/home';
@@ -58,6 +59,7 @@ element={
   </div>
 }
 />
+
 <Route 
 path='/Cart'
 element={
@@ -142,6 +144,7 @@ path='/AboutUs'
 element={
   <div>
     <Header/>
+    <Footer/>
     <AboutUs/>
   </div>
 }
@@ -175,7 +178,9 @@ element={
     />
 
   </Routes>
-  </BrowserRouter>
+  
+   <Footer />
+    </BrowserRouter>
   );
 }
 

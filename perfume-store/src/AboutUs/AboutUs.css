@@ -4,8 +4,9 @@ body {
   }
   
   .about-us {
-    background-color: #846b91;
-    color: white;
+    background-color: white;
+    color: #846b91;
+    
     padding-left: 10px;
     padding-right: 10px;
     display: flex;

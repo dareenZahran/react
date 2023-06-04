@@ -87,7 +87,7 @@ const AddProduct = () => {
           />
         </div>
         {error && <p className="error">{error}</p>}
-        <button type="submit">Add Product</button>
+        <button type="submit" className="submit">Add Product</button>
       </form>
     </div>
   );

@@ -4,9 +4,10 @@ body {
   padding: 0;
 }
 .cart-container{
-  background-color:#846b91;
+  background-color:white;
  
-  color: white;
+  color:#846b91;
+ 
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 20px;
@@ -23,6 +24,7 @@ font-style: italic;
 .total{
   background-color: aliceblue;
   color: #846b91;
+  
   border-radius: 20px;
   padding-left: 10px;
   padding-right: 10px;
@@ -36,4 +38,23 @@ font-style: italic;
 }
 .image{
   width: 100px;
+}
+.m{
+  margin-top: 10px;
+  margin-right: 27px;
+  width: 100%;
+  /* padding: 10px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #4c2f65, #cf83cf);
+  color: #090909;
+  border: none;
+
+  font-size: 20px;
+  /* cursor: pointer; */
+
+  border-radius: 30px;
 }

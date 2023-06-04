@@ -11,9 +11,7 @@ function Header() {
       </Link>
       <Category/>
 
-      <Link to="/AboutUs"> 
-        <button className='AboutUs'>About-Us</button>
-      </Link>
+      
 
       <div>
         <Link to="/cart">
@@ -23,7 +21,8 @@ function Header() {
 
       <div>
         <Link to="/Add">
-        <button className='AddProduct'>Add</button>
+        <img src='img/add1.png' className="add"/>
+        
         </Link>
       </div>
     </header>
