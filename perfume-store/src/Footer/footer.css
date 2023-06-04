@@ -1,12 +1,4 @@
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  
-  padding: 20px;
-  text-align: center;
-}
+
   footer {
     display:flex;
     justify-content: space-between;
@@ -21,15 +13,7 @@
     text-align: center;
   }
   
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #f8f8f8;
-    padding: 20px;
-    text-align: center;
-  }
+ 
  
   
   
@@ -40,9 +24,7 @@
     
   }
   
-  a:hover {
-    color: var(--secondary-color);
-  }
+  
  input{
     padding-top: 5px;
     padding-bottom: 5px;
@@ -57,28 +39,24 @@ width:15%;
  margin-left: 20px;
  margin-right: 20px;
  }
- .cart:hover{
-  width:32px;
-  height:32px;
- }
+ 
  
 .AboutUs{
 padding-left: 30px;
 justify-content: center;
 justify-items: center;
-
-}
-button.AboutUs {
-  background-color:#e9e7e7;
+background-color:#e9e7e7;
   color:#5a428b;
+  
   border: none;
   padding: 1px 22px;
   font-size: 12px;
   border-radius: 20px;
-
 }
+
 
 .AboutUs:hover {
   background-color:#391642;
   color: white;
+  
 }

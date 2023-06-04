@@ -110,37 +110,10 @@ const AddProduct = () => {
           <button type="submit">Add Product</button>
         </div>
 
-        <div>
-          <label htmlFor="description">Description</label>
-          <textarea
-            id="description"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="price">Price</label>
-          <input
-            type="number"
-            id="price"
-            value={price}
-            onChange={(e) => setPrice(parseFloat(e.target.value))}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="photo">Photo</label>
-          <input
-            type="text"
-            id="photo"
-            value={photo}
-            onChange={(e) => setPhoto(e.target.value)}
-            required
-          />
-        </div>
-        {error && <p className="error">{error}</p>}
-        <button type="submit" className="submit">Add Product</button>
+        
+        
+        
+        
       </form>
     </div>
   );

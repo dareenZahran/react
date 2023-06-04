@@ -1,49 +1,49 @@
 body {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+}
+
+.about-us {
+  background-color: white;
+  color: #846b91;
   
-  .about-us {
-    background-color: white;
-    color: #846b91;
-    
-    padding-left: 10px;
-    padding-right: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-    height: 100vh;
-    padding-top: 80px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  height: 100vh;
+  padding-top: 80px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-style: italic;
 
-  }
+}
 
-  
-  .about-us h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .about-us p {
-    font-size: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .about-us strong {
-    font-weight: bold;
-  }
-  
+
+.about-us h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.about-us p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.about-us strong {
+  font-weight: bold;
+}
+
 .contact{
-    background-color: rgb(255, 255, 255);
-    color: #846b91;
-    padding: 10px;
-    border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  color: #846b91;
+  padding: 10px;
+  border-radius: 20px;
 }
 .contact:hover{
-    background-color:#391642;
-    color: white;
+  background-color:#391642;
+  color: white;
 }

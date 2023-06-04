@@ -150,11 +150,10 @@ element={
 }
 />
 <Route 
-
 path='/Add'
 element={
   <div>
-      <Header/>
+    <Footer/>
    <AddProduct/>
   </div>
 }
