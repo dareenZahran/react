@@ -1,13 +1,12 @@
-.home{
-    /* background: linear-gradient(to right, #796087, #c1adc1); */
-    background-color: #796087;
+.home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
 }
-@media (max-width: 768px) {
-    .home {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
+
+@media (min-width: 768px) {
+  .home {
+    grid-template-columns: repeat(4, 1fr);
   }
-  
-  
+}

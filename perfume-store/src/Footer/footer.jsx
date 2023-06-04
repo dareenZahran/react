@@ -5,16 +5,16 @@ import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <footer>
-      <div>
+      {/* <div>
       <Link to="/AboutUs">
         <button className="AboutUs">About-Us</button>
       </Link>
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <Link to="/profile">
           <img src='img/profile.png' className="profile"/>
         </Link>
-      </div>
+      </div> */}
     </footer>
   );
 }

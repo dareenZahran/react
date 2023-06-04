@@ -12,7 +12,11 @@ function Header() {
       <Category/>
 
       
-
+      <div>
+      <Link to="/AboutUs">
+        <button className="AboutUs">About-Us</button>
+      </Link>
+      </div>
       <div>
         <Link to="/cart">
           <img src='img/cart.png' className="cart"/>
@@ -25,6 +29,12 @@ function Header() {
         
         </Link>
       </div>
+      <div>
+      <Link to="/profile">
+          <img src='img/profile.png' className="profile"/>
+        </Link></div>
+
+        
     </header>
   );
 }

@@ -41,6 +41,8 @@
   }
   
   .product-card {
+    
+    align-items: center;
     display: inline-flex;
     flex-direction: column;
     align-items: center;

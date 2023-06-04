@@ -1,26 +1,25 @@
 .profile-container {
-    align-items: center;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .profile-heading {
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .section-heading {
-    font-size: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .info-item {
-    margin-bottom: 5px;
-  }
-  
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0; /* Remove the padding */
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.profile-heading {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-heading {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.info-item {
+  margin-bottom: 5px;
+}
