@@ -73,6 +73,14 @@
     color: #000000;
     margin-bottom: 10px;
   }
+  .product-card button {
+    background-color: rgb(119, 75, 108);
+    color: white;
+  }
+  
+  .product-card button.added-to-cart {
+    background-color: gray;
+  }
   
   .product-card p {
     font-size: 14px;

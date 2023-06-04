@@ -58,6 +58,7 @@ element={
    
     <Header/>
     <Home/>
+    <Footer />
   </div>
 }
 />
@@ -68,7 +69,7 @@ element={
   <div>
      <Header/>
    <Cart/>
-  
+   <Footer />
   </div>
 }
 />
@@ -78,7 +79,7 @@ element={
   <div>
      <Header/>
    <Payment/>
-  
+   <Footer />
   </div>
 }
 />
@@ -90,6 +91,7 @@ element={
     <Header/>
     {/* <Category/> */}
     <Card/>
+    <Footer />
   </div>
 }
 />
@@ -110,6 +112,7 @@ element={
     <Header/>
     {/* <Category/> */}
     <Home/>
+     <Footer />
   </div>
 }
 />
@@ -120,6 +123,7 @@ element={
     <Header/>
     {/* <Category/> */}
     <Home/>
+    <Footer />
   </div>
 }
 />
@@ -129,6 +133,7 @@ element={
   <div>
     <Header/>
     <Women/>
+    <Footer />
   </div>
 }
 />
@@ -138,6 +143,7 @@ element={
   <div>
     <Header/>
     <Men/>
+    <Footer />
   </div>
 }
 />
@@ -157,14 +163,12 @@ path='/Add'
 element={
   <div>
       <Header/>
-    <Footer/>
-
    <AddProduct/>
+   <Footer />
   </div>
 }
 />
 <Route 
-
 path='/profile'
 element={
   <div>
@@ -173,12 +177,12 @@ element={
   </div>
 }
 />
-
 <Route 
 path='/SignUp'
 element={
   <div>
   <SignUp/>
+  
   </div>
 }
 />
@@ -189,6 +193,7 @@ element={
           <Header/>
     {/* <Category/> */}
     <Details/>
+    <Footer />
         </div>
       }
     />
@@ -199,6 +204,7 @@ element={
      <Header/>
      {/* <Category/> */}
   <SuccessPayment/>
+  <Footer />
   </div>
 }
 />
@@ -206,7 +212,7 @@ element={
 
   </Routes>
   
-   <Footer />
+   {/* <Footer /> */}
     </BrowserRouter>
   );
 }
