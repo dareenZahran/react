@@ -6,7 +6,7 @@ import './AboutUs.css'; // Import the CSS file
 
 const AboutUs = () => {
   useEffect(() => {
-    $('.about-us').css('background-color', 'yellow');
+    $('.about-us').css('background-color', 'white');
   }, []);
 
   return (

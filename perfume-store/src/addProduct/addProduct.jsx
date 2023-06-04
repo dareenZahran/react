@@ -109,7 +109,7 @@ const AddProduct = () => {
           {error && <p className="error">{error}</p>}
           <button type="submit">Add Product</button>
         </div>
-<<<<<<< HEAD
+
         <div>
           <label htmlFor="description">Description</label>
           <textarea
@@ -141,8 +141,6 @@ const AddProduct = () => {
         </div>
         {error && <p className="error">{error}</p>}
         <button type="submit" className="submit">Add Product</button>
-=======
->>>>>>> 615ceaf9d587a67e08c5612e6f29f20beab2abe6
       </form>
     </div>
   );

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
   
   header {
@@ -64,21 +64,19 @@ width:15%;
   }
   
  
-.AboutUs{
+  .AboutUs{
 padding-left: 30px;
 justify-content: center;
 justify-items: center;
-
-=======
+ }
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(to right, #846b91, #846b91);
   padding: 10px;
->>>>>>> 615ceaf9d587a67e08c5612e6f29f20beab2abe6
+  
 }
-
 .logo {
   font-size: 20px;
   margin: 0;
