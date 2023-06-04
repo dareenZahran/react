@@ -32,7 +32,14 @@
     margin-top: 10px;
     text-align: center;
   } */
-
+  @media (max-width: 768px) {
+    .home {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+  
   .product-card {
     display: inline-flex;
     flex-direction: column;

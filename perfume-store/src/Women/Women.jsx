@@ -1,9 +1,8 @@
 import React from 'react';
 import Card from '../PerfumeCard/card';
-// import axios from 'axios';
-import { useState,useEffect } from 'react';
+import { useState, useEffect } from 'react';
+
 const Women = () => {
-  
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -16,14 +15,12 @@ const Women = () => {
       .catch((err) => console.log('err', err));
   }, []);
 
-
   return (
-    <div className='home'>
-    {products.map(product => (
-      <Card key={product.id} product={product} />
-      // if
-    ))}
-  </div>
+    <div className="home">
+      {products.map((product) => (
+        <Card key={product.id} product={product} />
+      ))}
+    </div>
   );
 };
 
