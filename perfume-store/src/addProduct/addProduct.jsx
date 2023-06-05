@@ -1,7 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef ,useMemo} from 'react';
 import './cssfile.css';
+import axios from "axios";
+import { useNavigate } from 'react-router-dom';
 
 const AddProduct = () => {
+  const navigate = useNavigate();
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
   const [price, setPrice] = useState(0);
@@ -28,40 +31,71 @@ const AddProduct = () => {
     }
   };
 
+  const headers = useMemo(() => {
+    const token = localStorage.getItem('token');
+    return {
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json'
+    };
+  }, []);
+  
+
+
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const productData = {
-      name,
-      description,
-      price,
-      photo
-    };
+    // const productData = {
+    //   name,
+    //   description,
+    //   price,
+    //   photo
+    // };
 
-    try {
-      const response = await fetch('http://localhost:8080/products', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(productData)
+  
+      axios.post('http://localhost:8080/products', { name,description,price, photo })
+      .then(response => 
+        console.log(response)
+    )
+        
+          .catch(error => {
+          console.log(error)
       });
 
-      if (response.ok) {
-        setName('');
-        setDescription('');
-        setPrice(0);
-        setPhoto('');
-        setError('');
-      } else {
-        const data = await response.json();
-        setError(data.message);
-      }
-    } catch (error) {
-      setError('An error occurred. Please try again.');
-    }
+   
+      navigate("/home");
+    // try {
+    //   const response = await fetch('http://localhost:8080/products', {name,description,price,photo}
+      
+    //   // {
+    //   //   method: 'POST',
+    //   //   headers: {
+    //   //     'Content-Type': 'application/json'
+    //   //   },
+    //   //   body: JSON.stringify(productData)
+    //   // }
+    //   );
+
+    //   if (response.ok) {
+    //     console.log(response)
+    //     setName(response.data.name);
+    //     setDescription(response.data.description);
+    //     setPrice(0);
+    //     setPhoto("https://i.ibb.co/7pNNJbw/images-2.jpg");
+    //     // setError('');
+    //   } else {
+    //     const data = await response.json();
+    //     setError(data.message);
+    //   }
+    // } catch (error) {
+    //   setError('An error occurred. Please try again.');
+    // }
   };
 
+
+  // if (localStorage.getItem('email') !== 'test@gmail.com') {
+  //   return <p>Access Denied</p>;
+  // }
   return (
     <div>
       <form onSubmit={handleSubmit}>

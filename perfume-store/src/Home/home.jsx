@@ -1,11 +1,10 @@
 import React from 'react';
 import Card from '../PerfumeCard/card';
-import Category from '../Categore/category';
-import Women from '../Women/Women';
-import Men from '../Men/Men';
-// import axios from 'axios';
-import { useState,useEffect } from 'react';
+
+import { useState,useEffect,useMemo } from 'react';
+import AboutUs from '../AboutUs/AboutUs';
 const Home = () => {
+  // <headers/>
   
   const [products, setProducts] = useState([]);
   // useEffect(() => {
@@ -17,15 +16,25 @@ const Home = () => {
   //       console.error(error);
   //     });
   // }, []);
+
+
+  const headers = useMemo(() => {
+    const token = localStorage.getItem('token');
+    return {
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json'
+    };
+  }, []);
+
   useEffect(() => {
-    fetch('http://localhost:8080/products/')
+    fetch('http://localhost:8080/products',{headers})
       .then((res) => res.json())
       .then((data) => {
         console.log('data', data);
         setProducts(data._embedded.productsList);
       })
       .catch((err) => console.log('err', err));
-  }, []);
+  }, [headers]);
 
 
   return (
@@ -36,7 +45,7 @@ const Home = () => {
     ))}
   </div>
   );
+  // <AboutUs/>
 };
 
 export default Home;
-
