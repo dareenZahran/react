@@ -43,13 +43,13 @@ function Header() {
       ) : (
         <p>Access Denied</p>
       )}
-      <div>
+      {/* <div>
         <Link to="/AboutUs">
           <button className="submit2">
             <img src="img/icons8-about-50.png" alt="About Us" /> 
           </button>
         </Link>
-      </div>
+      </div> */}
  
 
       

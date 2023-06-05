@@ -42,7 +42,12 @@ width:15%;
  margin-right: 20px;
  padding-right: 30px; */
  }
- 
+ .aboutus{
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  margin-right: 15px;
+}
 /*  
  .AboutUs {
   size: 20px;

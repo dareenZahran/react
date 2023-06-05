@@ -5,6 +5,11 @@ import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <footer>
+      <div >
+        <Link to="/AboutUs">
+            <img src="img/icons8-about-50.png" alt="About Us"className='aboutus' /> 
+        </Link>
+      </div>
       {/* <div>
         <Link to="/AboutUs">
           <button className="AboutUs">About-Us</button>
