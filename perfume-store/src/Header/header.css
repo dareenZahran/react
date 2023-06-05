@@ -11,7 +11,7 @@ header {
   margin: 0;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-style: italic;
-  color: rgb(0, 0, 0);
+  color: #000;
   margin-left: 20px;
 }
 
@@ -27,7 +27,7 @@ header {
 }
 
 a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
   margin-right: 20px; /* Add margin here */
@@ -57,9 +57,10 @@ img {
 }
 
 .AboutUs {
-  padding-left: 30px;
-  justify-content: center;
-  justify-items: center;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 button.AboutUs {
@@ -73,5 +74,5 @@ button.AboutUs {
 
 .AboutUs:hover {
   background-color: #391642;
-  color: white;
+  color: #fff;
 }
